@@ -284,8 +284,9 @@
       <div class="mb-7 text-center">
         <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">{{ attraction.name }}</h3>
         <img class="card-img-top" src="{{ attraction.image.url }}" alt="attraction-img" />
-        <p>by {{ attraction.author }} | {{ attraction.date }}</p>
+        <p>by {{ attraction.author }} | {{ attraction.author.status}} | {{ attraction.date }}</p>
         <h4 class="fw-bold text-secondary mb-3">{{ attraction.description }}</h4>
+        <h5 class="fw-bold text-secondary mb-3">{{ attraction.tags }}</h5>
       </div>
 
       <div class="row">
