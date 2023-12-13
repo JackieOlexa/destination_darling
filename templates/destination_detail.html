@@ -308,7 +308,7 @@
       <div class="mb-7 text-center">
         <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">{{ destination.location }}</h3>
         <img class="card-img-top" src="{{ destination.image.url }}" alt="destination-img" />
-        <p>by {{ destination.author }} | {{ destination.date }}</p>
+        <p>by {{ destination.author }} | {{ destination.author.status}} | {{ destination.date }}</p>
         <h4 class="fw-bold text-secondary mb-3">{{ destination.details }}</h4>
       </div>
       <div class="mb-7 text-center">
